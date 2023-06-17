@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title> PFN - Awal</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
+    <style>
+        body::-webkit-scrollbar{
+    display: none;
+  }
+    </style>
+</head>
+
+<body>
+<section class="header"> 
+            <nav>
+                <a href="index.html"><img src="https://2.bp.blogspot.com/-jT-y9phGtQo/WcWXf7G0xlI/AAAAAAAAQoQ/L-kXjyeYFVUMU8c0vkzA8arhxqPoDlZ-gCLcBGAs/s1600/Produksi%2BFilm%2BNegara%2B%2528PFN%2529.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+</section>
+
+<!-- Video -->
+<section class="movie">
+<div class="container">
+  <div class="slide-container active">
+      <div class="slide">
+          <video src="/images/11.mp4" muted autoplay loop></video>
+          <div class="wave">
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+          </svg>
+        </div>
+      </div>
+  </div>
+
+  <div class="slide-container">
+      <div class="slide">
+          <video src="/images/14.mp4" muted autoplay loop></video>
+          <div class="wave">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+            </svg>
+          </div>
+      </div>
+  </div>
+
+  <div class="slide-container">
+      <div class="slide">
+          <video src="/images/13.mp4" muted autoplay loop></video>
+          <div class="wave">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+            </svg>
+          </div>
+      </div>
+  </div>
+
+  <div id="next" onclick="next()"> > </div>
+  <div id="prev" onclick="prev()"> < </div>
+</section>
+
+  <!-- Film -->
+  <section class="game-section">
+    <h1 class="line-title">Katalog Produl Film</h1>
+    <div class="owl-carousel custom-carousel owl-theme">
+    <div class="item active" style="background-image: url(https://ucarecdn.com/75d7700d-c102-40ff-9ba1-f0641444c616/dota2.jpg);">
+    <div class="item-desc">
+      <h3>Contoh Film 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+  </div>
+  <div class="item" style="background-image: url(https://ucarecdn.com/2a5f69bc-befa-49f4-acc6-ab1dcae514c7/winter3.jpg);">
+    <div class="item-desc">
+      <h3>Contoh Film 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+  </div>
+  <div class="item" style="background-image: url(https://ucarecdn.com/ec1918b1-2674-452c-bf61-8f73d8cc40c6/rdr2.jpg);">
+    <div class="item-desc">
+      <h3>Contoh Film 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+  </div>
+  <div class="item" style="background-image: url(https://ucarecdn.com/6ba9052d-6105-4491-917b-e1a65b68f920/pubg.jpg);">
+    <div class="item-desc">
+      <h3>Contoh Film 4</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+  </div>
+  <div class="item" style="background-image: url(https://ucarecdn.com/77598be3-c67f-40de-83d3-71a0f2f76c56/fortnite.jpg);">
+    <div class="item-desc">
+      <h3>Contoh Film 5</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+  </div>
+  <div class="item" style="background-image: url(https://ucarecdn.com/ed548880-32e4-42af-9d4e-632623903256/farcry5.jpg);">
+    <div class="item-desc">
+      <h3>Contoh Film 6</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- Katalog Produl Film 2-->
+<section class="game-section2">
+  <h1 class="line-title">Katalog Produk Film</h1>
+  <div class="owl-carousel custom-carousel owl-theme">
+  <div class="item active" style="background-image: url(https://static1.srcdn.com/wordpress/wp-content/uploads/Interstellar-Video-Interview-Chris-Nolan-Matthew-McConaughey.jpg);">
+  <div class="item-desc">
+    <h3>Contoh LYM 1</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </div>
+</div>
+<div class="item" style="background-image: url(https://i.ytimg.com/vi/DXE-atbdtGo/maxresdefault.jpg);">
+  <div class="item-desc">
+    <h3>Contoh LYM 2</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </div>
+</div>
+<div class="item" style="background-image: url(https://novastreamnetwork.com/wp-content/uploads/2023/04/vlcsnap-2023-04-16-11h25m54s270.png);">
+  <div class="item-desc">
+    <h3>Contoh LYM 3</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </div>
+</div>
+<div class="item" style="background-image: url(https://cdn.mos.cms.futurecdn.net/hk4V5cH2NjSp9zGzWrSFWQ-1200-80.jpg);">
+  <div class="item-desc">
+    <h3>Contoh LYM 4</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </div>
+</div>
+<div class="item" style="background-image: url(https://sportshub.cbsistatic.com/i/2021/09/07/229bce94-ad48-4994-b4f2-2e066b360db4/blue-bettle-xolo-mariduena-1277848.jpg?width=1200);">
+  <div class="item-desc">
+    <h3>Contoh LYM 5</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </div>
+</div>
+<div class="item" style="background-image: url(https://i.ytimg.com/vi/MDlSY7rDAfk/maxresdefault.jpg);">
+  <div class="item-desc">
+    <h3>Contoh LYM 6</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Katalog Produk Film 3 -->
+<section class="game-section">
+  <h1 class="line-title">Katalog Produk Film</h1>
+  <div class="owl-carousel custom-carousel owl-theme">
+  <div class="item active" style="background-image: url(https://images.thedirect.com/media/article_full/spider-man-no-way-home-poster-doc-ock.jpg);">
+  <div class="item-desc">
+    <h3>Contoh Film 1</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </div>
+</div>
+<div class="item" style="background-image: url(https://d2eib6r9tuf5y8.cloudfront.net/l/assets/img/article/article-1669-gkpaejvt/keyvisual.jpg);">
+  <div class="item-desc">
+    <h3>Contoh Film 2</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </div>
+</div>
+<div class="item" style="background-image: url(https://www.vintagemovieposters.co.uk/wp-content/uploads/2022/04/IMG_6155-scaled.jpeg);">
+  <div class="item-desc">
+    <h3>Contoh Film 3</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </div>
+</div>
+<div class="item" style="background-image: url(https://wallpapers.com/images/hd/fantastic-beasts-and-where-to-find-them-horizontal-poster-86utad5c6nr65k54.jpg);">
+  <div class="item-desc">
+    <h3>Contoh Film 4</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </div>
+</div>
+<div class="item" style="background-image: url(https://cdn.shopify.com/s/files/1/1416/8662/products/parasite_2019_british_quad_original_film_art_a.webp?v=1649453013);">
+  <div class="item-desc">
+    <h3>Contoh Film 5</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </div>
+</div>
+<div class="item" style="background-image: url(https://cdn.shopify.com/s/files/1/1755/9909/products/upthemovieadventureyataydisplay2_1024x1024.jpg?v=1609511383);">
+  <div class="item-desc">
+    <h3>Contoh Film 6</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta">
+<h1 class="line-title-cta">Contact Us</h1>
+<div class="contact-in">
+  <div class="contact-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2121978632704!2d106.86637482609284!3d-6.23573656106677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f374d9fa964f%3A0x4862cc6f9a4f40fd!2sStudio%20PFN%20-%20Perum%20Produksi%20Film%20Negara!5e0!3m2!1sen!2sus!4v1686991977237!5m2!1sen!2sus" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="contact-form">
+      <h1>Call For Our Various Service Anywhere From The World</h1>
+      <a href=""class="hero-btn"> CONTACT US</a> <a href="https://www.google.com/maps?ll=-6.236162,106.86908&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=5215956098150777085"class="hero-btn"> OUR LOCATION</a>
+  </div>
+</div>
+</section>
+
+<!-- Footer -->
+
+<footer class="footer">
+  <div class="container3">
+    <div class="row3">
+      <div class="footer-col">
+        <h4>Tentang Kami</h4>
+        <br>
+        <div class="text-center">
+          <img
+            src="logofooter.png"
+            alt="LOGO SEAL"
+            style="max-width: 100%; height: auto; left: 156px; top: 143px"
+          />
+        </div>
+        <br>
+        <br>
+        <p>Perusahaan Umum Produksi Film Negara (Perum PFN) didirikan
+            sebagai Berita Film Indonesia (BFI) pada tanggal 6 Oktober 1945
+            oleh R.M Soetarto. Pendirian BFI disaksikan oleh Menteri
+            Penerangan, Amir Syarifuddin dan BFI resmi bergabung menjadi
+            lembaga di bawah Kementerian Penerangan.</p>
+        
+      </div>
+      <div class="footer-col2">
+        <h4>Kontak Kami</h4>
+        <p><iconify-icon
+          icon="fluent:call-24-filled"
+          style="color: white"
+        ></iconify-icon>
+        +6221-8192508</p>
+        
+<p><a href="mailto:pfn@pfn.co.id">
+  <iconify-icon
+    icon="ic:outline-email"
+    style="color: white"
+  ></iconify-icon>
+  pfn@pfn.co.id
+</a></p>
+<iconify-icon
+  icon="gridicons:location"
+  style="color: white"
+></iconify-icon>
+<p>Jl. Otista Raya No.125-127, RT.9/RW.8, Bidara Cina, Kecamatan
+  Jatinegara, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta
+  13330</p>
+  <br>
+  <br>
+  <h4>Social Media</h4>
+  <div class="row">
+    <div class="col-lg-12">
+          <a href="https://twitter.com/studiopfn">
+            <img
+              src="assets/logotwitter.png"
+              alt="Twitter"
+              style="width: auto; height: 35px"
+            />
+          </a>
+          <a href="https://www.facebook.com/studiopfn">
+            <img
+              src="assets/logofacebook.png"
+              alt="Facebook"
+              style="width: auto; height: 35px"
+            />
+          </a>
+          <a href="https://www.instagram.com/pfn.indonesia/">
+            <img
+              src="assets/logoinstagram.png"
+              alt="Instagram"
+              style="width: auto; height: 35px"
+            />
+          </a>
+          <a href="https://www.youtube.com/studiopfn">
+            <img
+              src="assets/logoyoutube.png"
+              alt="YouTube"
+              style="width: auto; height: 35px"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/departemen-sdm-012141157/">
+            <img
+              src="assets/logolinkin.png"
+              alt="LinkedIn"
+              style="width: auto; height: 35px"
+            />
+          </a>
+    </div>
+  </div>
+
+      </div>
+      
+      <div class="footer-col4">
+        <h4>Menu</h4>
+        <div class="social-links">
+         
+            <a href="#">Beranda</a>
+            <br>
+            <a href="#">Tentang Kami</a>
+            <br>
+            <a href="#">Portofolio</a>
+            <br>
+            <a href="#">Kontak Kami</a>
+          </ul>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</footer>
+
+
+<!-- Toggle for Menu ( Android ) -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+<!-- Video Slide Kanan Kiri -->
+<script>
+  let slides = document.querySelectorAll('.slide-container');
+  let index = 0;
+  
+  function next(){
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+  }
+  
+  function prev(){
+      slides[index].classList.remove('active');
+      index = (index - 1 + slides.length) % slides.length;
+      slides[index].classList.add('active');
+  }
+  </script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+<script src="https://kit.fontawesome.com/75572f20e9.js" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>
